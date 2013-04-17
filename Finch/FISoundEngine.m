@@ -51,6 +51,13 @@
         maxPolyphony:voices error:error];
 }
 
+- (FISound*) soundFromPath: (NSString*) soundPath maxPolyphony: (NSUInteger) voices error: (NSError**) error
+{
+    return [[FISound alloc]
+            initWithPath:soundPath
+            maxPolyphony:voices error:error];
+}
+
 - (FISound*) soundNamed: (NSString*) soundName error: (NSError**) error
 {
     return [self soundNamed:soundName maxPolyphony:1 error:error];

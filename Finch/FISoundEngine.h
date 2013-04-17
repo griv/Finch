@@ -8,6 +8,7 @@
 + (id) sharedEngine;
 
 - (FISound*) soundNamed: (NSString*) soundName maxPolyphony: (NSUInteger) voices error: (NSError**) error;
+- (FISound*) soundFromPath: (NSString*) soundPath maxPolyphony: (NSUInteger) voices error: (NSError**) error;
 - (FISound*) soundNamed: (NSString*) soundName error: (NSError**) error;
 
 @end
